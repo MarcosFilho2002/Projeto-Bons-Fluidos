@@ -1,6 +1,9 @@
 const exphbs = require('express-handlebars');
 const express = require('express')
 
+const User = require('./models/User')
+const Post = require('./models/Post')
+
 const app = express()
 
 
@@ -13,7 +16,6 @@ app.get('/', async(req, res) => {
   
   res.render('index');
 })
-
 
 
 app.listen(3000, () => {
