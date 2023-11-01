@@ -16,6 +16,16 @@ class Users{
         return user;  
     }
 
+    save(){
+
+        const user = conn.db().collection('users').insertOne({
+            email : this.email,
+            senha: this.senha
+        })
+        return user;
+
+    }
+
 }
 
 module.exports = Users

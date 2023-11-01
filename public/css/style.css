@@ -3,22 +3,23 @@
     padding: 0;
 }
 
-body{
+body {
     font-family: 'Interface', Arial, sans-serif;
     background-color: #8d8d8d;
     background-size: 100%;
     background-image: url(../images/background_image.jpg);
-    background-repeat: no-repeat; 
+    background-repeat: no-repeat;
 }
-.area-cabecalho{
+
+.area-cabecalho {
     background-color: rgb(15, 15, 15);
     text-align: left;
     opacity: 0.85;
     display: flex;
 }
 
-.menu{
-    margin-left: 0px; 
+.menu {
+    margin-left: 0px;
     font-weight: bold;
     font-size: 15px;
     cursor: default;
@@ -28,23 +29,24 @@ body{
     width: 100%;
 }
 
-.menu a{
+.menu a {
     display: inline;
     margin: 0px 10px;
     padding: 15px 0px;
     text-decoration: none;
 }
 
-a{
+a {
     color: white;
     text-decoration: none;
     transition: all 20ms ease-in-out;
 }
 
-a:hover{
+a:hover {
     color: #4e4e4e;
 }
-.agenda{
+
+.agenda {
     background-color: #ffffff;
     color: rgb(0, 0, 0);
     font-weight: 900;
@@ -59,14 +61,14 @@ a:hover{
     margin-bottom: 10px;
     margin-left: 10px;
     margin-top: 5px;
-    
+
 }
 
-.agenda:hover{
+.agenda:hover {
     background-color: #e9e9e9;
 }
 
-.login{
+.login {
     background-color: #00A826;
     color: white;
     font-weight: 900;
@@ -83,10 +85,12 @@ a:hover{
     margin-left: 10px;
     margin-top: 5px;
 }
-.login:hover{
+
+.login:hover {
     background-color: #00cf30;
 }
-div.container-login{
+
+div.container-login {
     position: absolute;
     background-color: rgba(15, 15, 15, 0.7);
     width: 100%;
@@ -94,26 +98,26 @@ div.container-login{
     display: none;
 }
 
-div.container-login form{
-        background-color: white;
-        max-width: 400px;
-        width: 70%;
-        height: 40%;
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%,-50%);
-        border: 4px solid #ccc;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+div.container-login form {
+    background-color: white;
+    max-width: 400px;
+    width: 70%;
+    height: 40%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: 4px solid #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-div.container-login form div.div-login{
+div.container-login form div.div-login {
     width: 250px;
 }
 
-div.container-login form input{
+div.container-login form input {
     margin-top: 15px;
     width: 250px;
     height: 35px;
@@ -121,7 +125,8 @@ div.container-login form input{
     border-radius: 5px;
 
 }
-div.container-login form button{
+
+div.container-login form button {
     margin-top: 30px;
     width: 100px;
     height: 35px;
@@ -133,57 +138,134 @@ div.container-login form button{
     font-weight: 900;
     color: white;
 }
-div.container-login form .btn-entrar{
+
+div.container-login form .btn-entrar {
     background-color: #00A826;
     border: #00A826;
 }
-div.container-login form .btn-entrar:hover{
+
+div.container-login form .btn-entrar:hover {
     background-color: #00cf30;
-    
+
 }
-div.container-login form .btn-fechar{
+
+div.container-login form .btn-fechar {
     margin-left: 45px;
     background-color: #a50000;
     border: #a50000;
 }
-div.container-login form .btn-fechar:hover{
+
+div.container-login form .btn-fechar:hover {
     background-color: #c80000;
-    
+
 }
 
-div.container-login div.alerta-senha{
-    position: absolute;
-    right: 665px;
-    bottom: 460px;
-    z-index: 10;
-    display: none;
-}
-div.container-login div.alerta-email{
-    position: absolute;
-    right: 670px;
-    bottom: 460px;
-    z-index: 10;
-    display: none;
-}
-div.container-login div.alerta-tres{
-    position: absolute;
-    right: 572px;
-    bottom: 460px;
-    z-index: 10;
-    display: none;
-}
-div.container-login div.alerta-bd{
-    position: absolute;
-    right: 650px;
-    bottom: 460px;
-    z-index: 10;
+.div-login-falha {
     display: none;
 }
 
-.div-login-falha{
+.div-login-sucesso {
     display: none;
 }
 
-.div-login-sucesso{
+.registrar {
+    background-color: white;
+    color: #00A826;
+    font-weight: 900;
+    border: 1px solid #00A826;
+    border-radius: 2px;
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: all 200ms ease-in-out;
+    opacity: 1;
+    height: 37px;
+    width: 101px;
+    margin-right: 5px;
+}
+
+.registrar:hover {
+    background-color: #00cf30;
+    color: white;
+}
+
+div.container-registrar {
+    position: absolute;
+    background-color: rgba(15, 15, 15, 0.7);
+    width: 100%;
+    height: 100vh;
+    display: none;
+}
+
+div.container-registrar form {
+    background-color: white;
+    max-width: 400px;
+    width: 70%;
+    height: 40%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: 4px solid #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+div.container-registrar form div.div-registrar {
+    width: 250px;
+}
+
+div.container-registrar form input {
+    margin-top: 15px;
+    width: 250px;
+    height: 35px;
+    border: 1px solid black;
+    border-radius: 5px;
+
+}
+
+div.container-registrar form label,
+div.container-registrar form select {
+    margin-top: 15px;
+}
+
+div.container-registrar form button,
+.btn-cadastrar {
+    margin-top: 30px;
+    width: 100px;
+    height: 35px;
+    border: 1px solid;
+    border-radius: 3px;
+    background: none;
+    cursor: pointer;
+    transition: all 200ms ease-in-out;
+    font-weight: 900;
+    color: white;
+}
+
+div.container-registrar form .btn-cadastrar {
+    background-color: #00A826;
+    border: #00A826;
+    width: 100px;
+}
+
+div.container-registrar form .btn-cadastrar:hover {
+    background-color: #00cf30;
+
+}
+
+div.container-registrar form .btn-fechar-registro {
+    margin-left: 45px;
+    background-color: #a50000;
+    border: #a50000;
+}
+
+div.container-registrar form .btn-fechar-registro:hover {
+    background-color: #c80000;
+
+}
+
+.div-registro-sucesso{
     display: none;
 }

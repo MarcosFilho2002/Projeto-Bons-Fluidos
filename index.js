@@ -41,6 +41,19 @@ app.post('/login',async function(req,res){
   }
 })
 
+app.post('/register',async function(req,res){
+  const email = req.body.emailRegistro
+  const senha = req.body.senhaRegistro
+
+  const user = new User(email,senha)
+        
+  user.save()
+
+  res.render('index',{
+    layout:'sucessRegister'
+  });
+})
+
 
 app.listen(3000, () => {
   console.log('Server online')
