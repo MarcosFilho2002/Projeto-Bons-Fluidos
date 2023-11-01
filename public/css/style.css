@@ -179,3 +179,11 @@ div.container-login div.alerta-bd{
     z-index: 10;
     display: none;
 }
+
+.div-login-falha{
+    display: none;
+}
+
+.div-login-sucesso{
+    display: none;
+}

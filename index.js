@@ -6,15 +6,39 @@ const Post = require('./models/Post')
 
 const app = express()
 
+const serverSession = require('express-session')
 
 app.use('/public', express.static(__dirname + '/public'))
 app.engine('hbs', exphbs.engine({extname: '.hbs'}));
 app.set('view engine', 'hbs');
+app.use(express.urlencoded({extended: false}))
+
+app.use(serverSession({
+  secret: '4004-CrM7-Whe2Ko',
+  resave: true,
+  saveUninitialized: true
+}));
 
 
 app.get('/', async(req, res) => {
   
   res.render('index');
+})
+
+app.post('/login',async function(req,res){
+  const email = req.body.email
+  const senha = req.body.senha
+  const user = await User.logar(email,senha)
+  console.log(user)
+  if(user == null){
+    res.render('index',{
+      layout:'failLogin'
+    });
+  }else{
+    res.render('index',{
+      layout:'sucessLogin'
+    });
+  }
 })
 
 

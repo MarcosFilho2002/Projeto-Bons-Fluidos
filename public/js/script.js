@@ -56,7 +56,5 @@ document.querySelector('.btn-entrar').addEventListener('click', ()=>{
     }else if(email.length < 3 || senha.length < 3){
         let alerta = document.querySelector('.alerta-tres');
         alerta.style.display = 'block';
-    }else{
-        alert("Login efetuado com sucesso!")
     }
 });
