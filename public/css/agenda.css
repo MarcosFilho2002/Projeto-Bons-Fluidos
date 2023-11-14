@@ -1,3 +1,43 @@
-html{
-    background-color: black;
+html {
+    padding: 150px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+.calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 2px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.day {
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.day:hover {
+    background-color: #f0f0f0;
+}
+
+#status {
+    text-align: center;
+    margin-top: 20px;
+    font-style: italic;
+    color: #333;
 }
