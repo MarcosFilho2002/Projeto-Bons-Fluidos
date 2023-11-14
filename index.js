@@ -55,6 +55,13 @@ app.post('/register',async function(req,res){
 })
 
 
+app.get('/agenda', async(req, res) => {
+  
+  res.render('index',{
+    layout:'agenda'
+  });
+})
+
 app.listen(3000, () => {
   console.log('Server online')
 })
