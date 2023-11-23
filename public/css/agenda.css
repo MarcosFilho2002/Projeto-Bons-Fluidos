@@ -15,13 +15,15 @@ h1 {
     text-align: center;
     padding-bottom: 5px;
     font-size: 50px;
+    color: rgb(18, 233, 36);
 }
 
 h2 {
     position: relative;
     text-align: center;
-    padding-bottom: 30px;
+    padding-bottom: 25px;
     font-size: 38px;
+    color: rgb(18, 233, 36);
 }
 
 .days{
@@ -31,11 +33,13 @@ h2 {
     max-width: 750px;
     margin: auto;
     text-align: center;
+    background-color: rgb(221, 18, 191);
 }
 
 .DayWeek{
-    font-weight: bolder; 
+    color: white; 
     font-size: 20px;
+
 }
 .calendar {
     display: grid;
@@ -43,10 +47,11 @@ h2 {
     gap: 10px;
     max-width: 750px;
     margin: 0 auto;
+    padding-top: 5px;
 }
 
 .day {
-    border: 2px solid #ccc;
+    border: 2px solid #070707;
     padding: 25px;
     box-sizing: border-box;
     text-align: center;
@@ -64,4 +69,5 @@ h2 {
     margin-top: 80px;
     font-style: italic;
     color: #333;
+    text-decoration: underline;
 }
