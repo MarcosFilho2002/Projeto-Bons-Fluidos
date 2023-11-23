@@ -1,34 +1,58 @@
 html {
-    padding: 150px;
+    padding: 180px;
 }
 
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     margin: 0;
-    padding: 20px;
+    padding: 15px;
     align-items: center;
 }
 
 h1 {
+    position: relative;
+    text-align: center;
+    padding-bottom: 5px;
+    font-size: 50px;
+}
+
+h2 {
+    position: relative;
+    text-align: center;
+    padding-bottom: 30px;
+    font-size: 38px;
+}
+
+.days{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+    max-width: 750px;
+    margin: auto;
     text-align: center;
 }
 
+.DayWeek{
+    font-weight: bolder; 
+    font-size: 20px;
+}
 .calendar {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
-    gap: 2px;
-    max-width: 600px;
+    gap: 10px;
+    max-width: 750px;
     margin: 0 auto;
 }
 
 .day {
-    border: 1px solid #ccc;
-    padding: 10px;
+    border: 2px solid #ccc;
+    padding: 25px;
     box-sizing: border-box;
     text-align: center;
-    background-color: #fff;
+    background-color: #50505000;
     cursor: pointer;
+    font-size: 20px;
 }
 
 .day:hover {
@@ -37,7 +61,7 @@ h1 {
 
 #status {
     text-align: center;
-    margin-top: 20px;
+    margin-top: 80px;
     font-style: italic;
     color: #333;
 }
