@@ -4,65 +4,146 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="/public/css/style.css">
     <link rel="stylesheet" type="text/css" href="/public/css/agenda.css">
+    <link rel="stylesheet" type="text/css" href="/public/css/palestras.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="/public/images/agendaIcon.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agenda Virtual - Bons Fluídos</title>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 </head>
-    <body>
-   <h1>Agenda de Datas</h1>
+<body>
+    <h1>Agenda de Datas</h1>
    
-   <h2>Mês</h2>
+    <h2>Mês</h2>
+    <form id="meuFormulario">
+        <label for="titulo">Título:</label>
+        <input type="text" id="titulo" name="titulo" required>
 
-<div class="days">
-    <div class="DayWeek">Domingo</div>
-    <div class="DayWeek">Segunda</div>
-    <div class="DayWeek">Terça</div>
-    <div class="DayWeek">Quarta</div>
-    <div class="DayWeek">Quinta</div>
-    <div class="DayWeek">Sexta</div>
-    <div class="DayWeek">Sábado</div>
- </div>
+        <label for="conteudo">conteudo:</label>
+        <input type="text" id="conteudo" name="conteudo" required>
+
+        <label for="data">Data:</label>
+        <input type="date" id="data" name="data" required>
+        <button type="button" onclick="enviarFormulario()">Enviar</button>
+    </form>
+    <div class="days">
+        <div class="DayWeek">Domingo</div>
+        <div class="DayWeek">Segunda</div>
+        <div class="DayWeek">Terça</div>
+        <div class="DayWeek">Quarta</div>
+        <div class="DayWeek">Quinta</div>
+        <div class="DayWeek">Sexta</div>
+        <div class="DayWeek">Sábado</div>
+    </div>
     
-<div class="calendar">
-    <div class="day" onclick="reserve(this)">1</div>
-    <div class="day" onclick="reserve(this)">2</div>
-    <div class="day" onclick="reserve(this)">3</div>
-    <div class="day" onclick="reserve(this)">4</div>
-    <div class="day" onclick="reserve(this)">5</div>
-    <div class="day" onclick="reserve(this)">6</div>
-    <div class="day" onclick="reserve(this)">7</div>
-    <div class="day" onclick="reserve(this)">8</div>
-    <div class="day" onclick="reserve(this)">9</div>
-    <div class="day" onclick="reserve(this)">10</div>
-    <div class="day" onclick="reserve(this)">11</div>
-    <div class="day" onclick="reserve(this)">12</div>
-    <div class="day" onclick="reserve(this)">13</div>
-    <div class="day" onclick="reserve(this)">14</div>
-    <div class="day" onclick="reserve(this)">15</div>
-    <div class="day" onclick="reserve(this)">16</div>
-    <div class="day" onclick="reserve(this)">17</div>
-    <div class="day" onclick="reserve(this)">18</div>
-    <div class="day" onclick="reserve(this)">19</div>
-    <div class="day" onclick="reserve(this)">20</div>
-    <div class="day" onclick="reserve(this)">21</div>
-    <div class="day" onclick="reserve(this)">22</div>
-    <div class="day" onclick="reserve(this)">23</div>
-    <div class="day" onclick="reserve(this)">24</div>
-    <div class="day" onclick="reserve(this)">25</div>
-    <div class="day" onclick="reserve(this)">26</div>
-    <div class="day" onclick="reserve(this)">27</div>
-    <div class="day" onclick="reserve(this)">28</div>
-    <div class="day" onclick="reserve(this)">29</div>
-    <div class="day" onclick="reserve(this)">30</div>
-    <div class="day" onclick="reserve(this)">31</div>
-    <!-- Repita para mais dias -->
-    <!-- Este exemplo mostra uma grade de 10 dias para simplificação -->
-</div>
+    <div class="calendar">
+        <div class="day" onclick="reserve(this)">1</div>
+        <div class="day" onclick="reserve(this)">2</div>
+        <div class="day" onclick="reserve(this)">3</div>
+        <div class="day" onclick="reserve(this)">4</div>
+        <div class="day" onclick="reserve(this)">5</div>
+        <div class="day" onclick="reserve(this)">6</div>
+        <div class="day" onclick="reserve(this)">7</div>
+        <div class="day" onclick="reserve(this)">8</div>
+        <div class="day" onclick="reserve(this)">9</div>
+        <div class="day" onclick="reserve(this)">10</div>
+        <div class="day" onclick="reserve(this)">11</div>
+        <div class="day" onclick="reserve(this)">12</div>
+        <div class="day" onclick="reserve(this)">13</div>
+        <div class="day" onclick="reserve(this)">14</div>
+        <div class="day" onclick="reserve(this)">15</div>
+        <div class="day" onclick="reserve(this)">16</div>
+        <div class="day" onclick="reserve(this)">17</div>
+        <div class="day" onclick="reserve(this)">18</div>
+        <div class="day" onclick="reserve(this)">19</div>
+        <div class="day" onclick="reserve(this)">20</div>
+        <div class="day" onclick="reserve(this)">21</div>
+        <div class="day" onclick="reserve(this)">22</div>
+        <div class="day" onclick="reserve(this)">23</div>
+        <div class="day" onclick="reserve(this)">24</div>
+        <div class="day" onclick="reserve(this)">25</div>
+        <div class="day" onclick="reserve(this)">26</div>
+        <div class="day" onclick="reserve(this)">27</div>
+        <div class="day" onclick="reserve(this)">28</div>
+        <div class="day" onclick="reserve(this)">29</div>
+        <div class="day" onclick="reserve(this)">30</div>
+        <div class="day" onclick="reserve(this)">31</div>
+        <!-- Repita para mais dias -->
+        <!-- Este exemplo mostra uma grade de 10 dias para simplificação -->
+    </div>
+    <p id="status">Clique em uma data para reservar.</p>
+    <div>
+      <ul style="display: flex;" >
+        {{#each palestras}}
+          <div class="palestra-card"  >
+            <li><button class="palestra-button" onclick="desativarElemento(event)">X</button></li>
+            <li class="palestra-titulo">{{this.titulo}}</li>
+            <li class="palestra-text">{{this.conteudo}}</li>
+            <li class="palestra-text">{{this.data}}</li>
+          </div>
+        {{/each}}
+      </ul>
+    </div>
+    <script>
+       async function desativarElemento(event){ 
+        const elementoClicado = event.target;
+        var palestraCard = event.target.closest('.palestra-card');
+        var palestraTitulo = palestraCard.querySelector('.palestra-titulo');
+        var conteudoTexto = palestraTitulo.textContent.trim();
+        console.log(conteudoTexto)
+          if (conteudoTexto) {
+            try {
+              // Faz uma solicitação DELETE assíncrona para a rota de remoção
+              const resposta = await fetch(`/palestras/${conteudoTexto}`, {
+                method: 'DELETE',
+                headers: {
+                  'Content-Type': 'application/json'
+                },
+              });
 
-<p id="status">Clique em uma data para reservar.</p>
+              if (resposta.ok) {
+                console.log('Palestra removida com sucesso.');
+              // Realize outras ações, se necessário
+              } else {
+                console.error('Erro ao remover a palestra.');
+              }
+            } catch (erro) {
+              console.error(`Erro na requisição: ${erro}`);
+            }
+            
+          }
+        
+        location.reload();
+      }
+    
 
+    function enviarFormulario() {
+      const formulario = document.getElementById('meuFormulario');
+      const titulo = formulario.elements['titulo'].value;
+      const conteudo = formulario.elements['conteudo'].value;
+      const data = formulario.elements['data'].value;
 
-    </body>
+      fetch('/palestras', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          titulo: titulo,
+          conteudo: conteudo,
+          data: data,
+        }),
+      })
+      .then(response => response.json())
+      .then(data => {
+        console.log('Resposta do servidor:', data);
+        location.reload();
+      })
+      .catch(error => {
+        console.error('Erro ao enviar dados:', error);
+      });
+      location.reload();
+    }
+    </script>
+</body>
 </html>
