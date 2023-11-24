@@ -2,8 +2,9 @@
 ## Repositório para o projeto da matéria Certificadora de Competência Identitária.
 
 ## 🛠 Ferramentas utilizadas para codificar, compilar e executar o projeto:
-![Static Badge](https://img.shields.io/badge/Node-v16.20.0-brightgreen)https://nodejs.org/download/release/v16.20.2/node-v16.20.2-win-x64.zip.
-![Static Badge](https://img.shields.io/badge/VScode-v1.84-blue)https://code.visualstudio.com/sha/download?build=stable&os=win32-x64-user.
+![Static Badge](https://img.shields.io/badge/Node-v16.20.0-brightgreen) https://nodejs.org/download/release/v16.20.2/node-v16.20.2-win-x64.zip.
+<br>
+![Static Badge](https://img.shields.io/badge/VScode-v1.84-blue) https://code.visualstudio.com/sha/download?build=stable&os=win32-x64-user.
 
 ## 🛠 Ferramentas para criar e hospedar a base de dados:
 ![Static Badge](https://img.shields.io/badge/MongoDB-v6.0.3-darkgreen)https://fastdl.mongodb.org/windows/mongodb-windows-x86_64-6.0.11.zip.
