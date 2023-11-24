@@ -79,5 +79,17 @@
         </nav>
     </div>
 
+    <div>
+      <ul style="display: flex;" >
+        {{#each palestras}}
+          <div class="palestra-card">
+            <li class="palestra-titulo">{{this.titulo}}</li>
+            <li class="palestra-text">{{this.conteudo}}</li>
+            <li class="palestra-text">{{this.data}}</li>
+          </div>
+        {{/each}}
+      </ul>
+    </div>
+
 </div>
 <script src="/public/js/script.js"></script>

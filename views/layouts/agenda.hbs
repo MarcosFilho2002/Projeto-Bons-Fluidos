@@ -12,6 +12,7 @@
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 </head>
 <body>
+  
     <h1>Agenda de Datas</h1>
    
     <h2>Mês</h2>
@@ -122,6 +123,8 @@
       const titulo = formulario.elements['titulo'].value;
       const conteudo = formulario.elements['conteudo'].value;
       const data = formulario.elements['data'].value;
+      var dataFormatada = new Date(data);
+      dataFormatada = dataFormatada.toLocaleDateString('pt-BR',{timeZone: 'UTC'});
 
       fetch('/palestras', {
         method: 'POST',
@@ -131,7 +134,7 @@
         body: JSON.stringify({
           titulo: titulo,
           conteudo: conteudo,
-          data: data,
+          data: dataFormatada,
         }),
       })
       .then(response => response.json())

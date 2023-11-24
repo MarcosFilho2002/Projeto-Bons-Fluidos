@@ -31,3 +31,7 @@
 6. O servidor inciará na porta:3000.
 7. Abra um navegador e acesse <http://localhost:3000>.
 8. Para interromper a excecução do projeto, no terminal, use o comando "ctrl+c".
+
+# Passos para testar o sistema:
+### Grupo 07
+### O objetivo do sistema desenvolvido é gerenciar palestras, podendo-se vizualizar, agendar e desagendar.

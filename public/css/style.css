@@ -269,3 +269,34 @@ div.container-registrar form .btn-fechar-registro:hover {
 .div-registro-sucesso{
     display: none;
 }
+
+.palestra-card {
+    margin: 1em;
+    padding: 1em;
+    min-height: 8em;
+    min-width: 8em;
+    font-weight: bold;
+    border-radius: 0.5em;
+    background-color: aquamarine;
+    list-style-type: none;
+  }
+  
+  .palestra-text {
+    margin: 1em;
+  }
+  
+  .palestra-titulo {
+      margin: 1em;
+    }
+  
+  .palestra-desativado {
+    display: none;
+  }
+
+  .palestra-button {
+    color: red ;
+  }
+
+  .agenda{
+    visibility: hidden;
+  }

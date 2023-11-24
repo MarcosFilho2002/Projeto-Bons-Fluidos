@@ -22,7 +22,6 @@ app.use(serverSession({
 
 
 app.get('/', async(req, res) => {
-  
   res.render('index');
 })
 
@@ -30,6 +29,7 @@ app.post('/login',async function(req,res){
   const email = req.body.email
   const senha = req.body.senha
   const user = await User.logar(email,senha)
+  const palestras = await Post.listar();
   console.log(user)
   if(user == null){
     res.render('index',{
@@ -37,7 +37,8 @@ app.post('/login',async function(req,res){
     });
   }else{
     res.render('index',{
-      layout:'sucessLogin'
+      layout:'sucessLogin',
+      palestras : palestras
     });
   }
 })
