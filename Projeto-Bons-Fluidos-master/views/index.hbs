@@ -1,0 +1,83 @@
+<div class="container-login">
+    <form class="form-login" action="/login" method="POST">
+        <div class="div-login">
+            <input type="email" placeholder="Email" name="email" class="input-email" required>
+            <input type="password" placeholder="Senha" name="senha" minlength="3" class="input-senha" required>
+            <br>
+            <button type="submit" class="btn-entrar">Entrar</button>
+            <button type="button" class="btn-fechar">Fechar</button>
+        </div>
+    </form>
+
+</div>
+
+<div class="div-login-falha">
+    <div class="div-falha">
+        <p>Usuário não encontrado!</p>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" height="16px" width="16px"
+            viewBox="0 0 460.775 460.775">
+            <path
+                d="M285.08,230.397L456.218,59.27c6.076-6.077,6.076-15.911,0-21.986L423.511,4.565c-2.913-2.911-6.866-4.55-10.992-4.55 c-4.127,0-8.08,1.639-10.993,4.55l-171.138,171.14L59.25,4.565c-2.913-2.911-6.866-4.55-10.993-4.55 c-4.126,0-8.08,1.639-10.992,4.55L4.558,37.284c-6.077,6.075-6.077,15.909,0,21.986l171.138,171.128L4.575,401.505 c-6.074,6.077-6.074,15.911,0,21.986l32.709,32.719c2.911,2.911,6.865,4.55,10.992,4.55c4.127,0,8.08-1.639,10.994-4.55 l171.117-171.12l171.118,171.12c2.913,2.911,6.866,4.55,10.993,4.55c4.128,0,8.081-1.639,10.992-4.55l32.709-32.719 c6.074-6.075,6.074-15.909,0-21.986L285.08,230.397z">
+            </path>
+        </svg>
+
+
+    </div>
+</div>
+
+<div class="div-login-sucesso">
+    <div class="div-sucesso">
+        <p>Login efetuado com sucesso!</p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle"
+            viewBox="0 0 16 16">
+            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+            <path
+                d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z" />
+        </svg>
+    </div>
+</div>
+
+<div class="container-registrar">
+    <form class="form-registrar" action="/register" method="POST">
+        <div class="div-registrar">
+            <input type="email" name="emailRegistro" placeholder="Email" required>
+            <input type="password" name="senhaRegistro" placeholder="Senha" minlength="3" required>
+            <br>
+            <input type="submit" value="Cadastrar" class="btn-cadastrar">
+            <button type="button" class="btn-fechar-registro">Fechar</button>
+        </div>
+    </form>
+</div>
+
+<div class="div-registro-sucesso">
+    <div class="div-sucesso">
+        <p>Registro efetuado com sucesso!</p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle"
+            viewBox="0 0 16 16">
+            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+            <path
+                d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z" />
+        </svg>
+
+    </div>
+</div>
+
+<div class="main">
+    <div class="area-cabecalho">
+        <nav class="menu">
+            
+            <form class="form-registrar" action="/agenda" method="get">
+                <input type="submit" value="Agenda" class="agenda">
+            </form>
+
+
+
+            <div>
+                <button class="login">Login</button>
+                <button class="registrar">Registrar</button>
+            </div>
+        </nav>
+    </div>
+
+</div>
+<script src="/public/js/script.js"></script>
