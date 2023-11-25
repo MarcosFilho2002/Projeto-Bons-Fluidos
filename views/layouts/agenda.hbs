@@ -16,17 +16,6 @@
     <h1>Agenda de Datas</h1>
    
     <h2>Mês</h2>
-    <form id="meuFormulario">
-        <label for="titulo">Título:</label>
-        <input type="text" id="titulo" name="titulo" required>
-
-        <label for="conteudo">conteudo:</label>
-        <input type="text" id="conteudo" name="conteudo" required>
-
-        <label for="data">Data:</label>
-        <input type="date" id="data" name="data" required>
-        <button type="button" onclick="enviarFormulario()">Enviar</button>
-    </form>
     <div class="days">
         <div class="DayWeek">Domingo</div>
         <div class="DayWeek">Segunda</div>
@@ -72,7 +61,26 @@
         <!-- Repita para mais dias -->
         <!-- Este exemplo mostra uma grade de 10 dias para simplificação -->
     </div>
-    <p id="status">Clique em uma data para reservar.</p>
+    <form class="form-agenda" id="meuFormulario">
+        <div>
+            <div class="form-campo">
+                <label for="titulo">Título:</label>
+                <input class="input-titulo" type="text" id="titulo" name="titulo" required>
+            </div>
+            <div class="form-campo">
+                <label for="conteudo">Conteúdo:</label>
+                <input class="input-conteudo"  type="text" id="conteudo" name="conteudo" required>
+            </div>
+            <div class="form-campo">
+                <label for="data">Data:</label>
+                <input class="input-titulo" type="date" id="data" name="data" required>
+            </div>
+            <div>
+
+                <button class="form-button " type="button" onclick="enviarFormulario()">Enviar</button>
+            </div>
+        </div>
+    </form>
     <div>
       <ul style="display: flex;" >
         {{#each palestras}}
