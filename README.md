@@ -35,3 +35,9 @@
 # Passos para testar o sistema:
 ### Grupo 07
 ### O objetivo do sistema desenvolvido é gerenciar palestras, podendo-se vizualizar, agendar e desagendar.
+## Usuário Admin:
+#### email: admin@admin
+#### senha: 123
+## Usuário Padrão:
+#### email: user@user
+#### senha: 123
