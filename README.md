@@ -32,6 +32,14 @@
 7. Abra um navegador e acesse <http://localhost:3000>.
 8. Para interromper a excecução do projeto, no terminal, use o comando "ctrl+c".
 
+
+## Usuário Admin:
+#### email: admin@admin
+#### senha: 123
+## Usuário Padrão:
+#### email: user@user
+#### senha: 123
+
 # Passos para testar o sistema:
 ### Grupo 07
 ### O objetivo do sistema desenvolvido é gerenciar palestras, podendo-se vizualizar, agendar e desagendar.
@@ -82,10 +90,3 @@ Ação: Acesse a área de agenda pelo botão de agenda de palestras.
 Ação: Selecione uma palestra para remover pelo X no card da palestra.
 Verificação: Confirme se a palestra é removida com sucesso.
 Resultado Esperado: A palestra selecionada não é mais exibida no sistema após a remoção.
-
-## Usuário Admin:
-#### email: admin@admin
-#### senha: 123
-## Usuário Padrão:
-#### email: user@user
-#### senha: 123
