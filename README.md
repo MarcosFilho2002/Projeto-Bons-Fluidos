@@ -35,6 +35,25 @@
 # Passos para testar o sistema:
 ### Grupo 07
 ### O objetivo do sistema desenvolvido é gerenciar palestras, podendo-se vizualizar, agendar e desagendar.
+#### Roteiro de Teste: Funcionalidade de Login
+#### Objetivo: Verificar se o sistema de login funciona corretamente, permitindo que os usuários acessem suas contas de forma segura.
+1. Teste de Login com Credenciais Válidas:
+Ação: Acesse a página de login.
+Ação: Insira um nome de usuário válido.
+Ação: Insira uma senha válida.
+Verificação: Confirme se o login é bem-sucedido.
+Resultado Esperado: O usuário é redirecionado para a página principal.
+2. Teste de Login com Credenciais Inválidas:
+Ação: Acesse a página de login.
+Ação: Insira um nome de usuário inválido.
+Ação: Insira uma senha inválida.
+Verificação: Confirme se uma mensagem de erro apropriada é exibida.
+Resultado Esperado: O sistema não permite o login e exibe uma mensagem de erro.
+3. Teste de Logout:
+Ação: Faça login no sistema.
+Ação: Localize e clique no botão de logout.
+Verificação: Confirme se o usuário é desconectado com sucesso.
+Resultado Esperado: O usuário é redirecionado para a página inicial. 
 ## Usuário Admin:
 #### email: admin@admin
 #### senha: 123
