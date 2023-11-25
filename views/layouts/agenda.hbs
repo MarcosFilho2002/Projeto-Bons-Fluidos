@@ -14,10 +14,13 @@
 <body>
     <div class="area-cabecalho-agenda">
         <nav class="cabecalho-agenda">
-            <button class="cabecalho-botao" onclick="goBack()">Voltar</button>
+            <form action="/login" method="get">
+              <button type="submit" class="cabecalho-botao">Voltar</button>
+            </form>
+            
         </nav>
     </div>
-    <h1>Agenda de Datas</h1>
+    {{!-- <h1>Agenda de Datas</h1>
    
     <h2>Mês</h2>
     <div class="days">
@@ -64,7 +67,7 @@
         <div class="day" onclick="reserve(this)">31</div>
         <!-- Repita para mais dias -->
         <!-- Este exemplo mostra uma grade de 10 dias para simplificação -->
-    </div>
+    </div> --}}
     <form class="form-agenda" id="meuFormulario">
         <div>
             <div class="form-campo">

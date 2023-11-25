@@ -1,5 +1,9 @@
 const exphbs = require('express-handlebars');
 const express = require('express')
+const jwt = require('jsonwebtoken');
+
+var aux = 0;
+
 
 const User = require('./models/User')
 const Post = require('./models/Post')
@@ -36,18 +40,42 @@ app.post('/login',async function(req,res){
       layout:'failLogin'
     });
   }else{
+    if(user.admin == 'sim'){
+      aux = 1;
+      res.render('index',{
+        layout:'sucessLoginAdmin',
+        palestras : palestras,
+      });
+    }else{
+      aux = 2
+      res.render('index',{
+        layout:'sucessLogin',
+        palestras : palestras,
+      });
+    }    
+  }
+})
+
+app.get('/login',async function(req,res){
+  const palestras = await Post.listar();
+  if(aux == 1){
+    res.render('index',{
+      layout:'sucessLoginAdmin',
+      palestras : palestras,
+    });
+  }else{
     res.render('index',{
       layout:'sucessLogin',
-      palestras : palestras
-    });
+      palestras : palestras,
+    });  
   }
 })
 
 app.post('/register',async function(req,res){
   const email = req.body.emailRegistro
   const senha = req.body.senhaRegistro
-
-  const user = new User(email,senha)
+  const admin = req.body.adminRegistro
+  const user = new User(email,senha,admin)
         
   user.save()
 

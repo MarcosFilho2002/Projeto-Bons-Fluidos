@@ -277,16 +277,20 @@ div.container-registrar form .btn-fechar-registro:hover {
     min-width: 8em;
     font-weight: bold;
     border-radius: 0.5em;
-    background-color: aquamarine;
+    background-color: rgb(221, 18, 191);
     list-style-type: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 2);
   }
   
   .palestra-text {
     margin: 1em;
+    color: white;
+    font-weight: 500;
   }
   
   .palestra-titulo {
       margin: 1em;
+      color: white;
     }
   
   .palestra-desativado {
@@ -294,9 +298,43 @@ div.container-registrar form .btn-fechar-registro:hover {
   }
 
   .palestra-button {
-    color: red ;
-  }
+    color: #fff;
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.palestra-button:hover {
+    transform: scale(1.1); /* Grow by 10% on hover */
+}
 
   .agenda{
     visibility: hidden;
+  }
+
+  .logout {
+    background-color: #a80000;
+    color: white;
+    font-weight: 900;
+    border: 1px solid #a8001f;
+    border-radius: 2px;
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: all 200ms ease-in-out;
+    opacity: 1;
+    height: 37px;
+    width: 101px;
+    margin-right: 5px;
+    margin-top: 5px;
+}
+
+.logout:hover {
+    background-color: #cf0011;
+
+}
+
+  .logout{
+    display: none;
   }

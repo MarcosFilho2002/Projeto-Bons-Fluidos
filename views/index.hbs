@@ -4,7 +4,7 @@
             <input type="email" placeholder="Email" name="email" class="input-email" required>
             <input type="password" placeholder="Senha" name="senha" minlength="3" class="input-senha" required>
             <br>
-            <button type="submit" class="btn-entrar">Entrar</button>
+            <button type="submit" class="btn-entrar" >Entrar</button>
             <button type="button" class="btn-fechar">Fechar</button>
         </div>
     </form>
@@ -42,6 +42,11 @@
         <div class="div-registrar">
             <input type="email" name="emailRegistro" placeholder="Email" required>
             <input type="password" name="senhaRegistro" placeholder="Senha" minlength="3" required>
+            <label class="adm" for="adminRegistro">Adiministrador do Sistema</label>
+            <select name="adminRegistro" required>
+                <option value="nao">Não</option>
+                <option value="sim">Sim</option>
+            </select>
             <br>
             <input type="submit" value="Cadastrar" class="btn-cadastrar">
             <button type="button" class="btn-fechar-registro">Fechar</button>
@@ -70,11 +75,12 @@
                 <input type="submit" value="Agenda" class="agenda">
             </form>
 
-
-
             <div>
                 <button class="login">Login</button>
                 <button class="registrar">Registrar</button>
+                <form action="/" method="get">
+                    <button class="logout">Logout</button>
+                </form>
             </div>
         </nav>
     </div>

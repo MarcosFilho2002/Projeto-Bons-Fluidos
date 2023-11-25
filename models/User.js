@@ -3,14 +3,15 @@ class Users{
     constructor(email,senha,admin){
         this.email = email
         this.senha = senha
+        this.admin = admin
     }
 
-    static logar(email,senha){
+    static logar(email,senha,admin){
 
         const user = conn.db().collection('users').findOne(
             {
                 email: email,
-                senha: senha
+                senha: senha,
             }         
         )
         return user;  
@@ -20,7 +21,8 @@ class Users{
 
         const user = conn.db().collection('users').insertOne({
             email : this.email,
-            senha: this.senha
+            senha: this.senha,
+            admin: this.admin
         })
         return user;
 
