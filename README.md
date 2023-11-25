@@ -37,6 +37,9 @@
 ### O objetivo do sistema desenvolvido é gerenciar palestras, podendo-se vizualizar, agendar e desagendar.
 #### Roteiro de Teste: Funcionalidade de Login
 #### Objetivo: Verificar se o sistema de login funciona corretamente, permitindo que os usuários acessem suas contas de forma segura.
+Pré-condições:
+O sistema está online e acessível.
+
 1. Teste de Login com Credenciais Válidas:
 Ação: Acesse a página de login.
 Ação: Insira um nome de usuário válido.
@@ -53,7 +56,33 @@ Resultado Esperado: O sistema não permite o login e exibe uma mensagem de erro.
 Ação: Faça login no sistema.
 Ação: Localize e clique no botão de logout.
 Verificação: Confirme se o usuário é desconectado com sucesso.
-Resultado Esperado: O usuário é redirecionado para a página inicial. 
+Resultado Esperado: O usuário é redirecionado para a página inicial.
+
+#### Roteiro de Teste: Inclusão, vizualização e exclusão de Palestra
+#### Objetivo: Verificar se a funcionalidade de inclusão de palestras no sistema está operando corretamente, permitindo que novas palestras sejam adicionadas.
+Pré-condições:
+O sistema está online e acessível.
+O usuário possui as permissões adequadas para adicionar uma palestra.
+
+1. Teste de Adição Básica de Palestra:
+Ação: Realize o login com um usuário admin válido.
+Ação: Acesse a área de agenda pelo botão de agenda de palestras.
+Ação: Preencha os campos obrigatórios, como título, data, hora e local da palestra.
+Verificação: Confirme se a palestra é adicionada com sucesso.
+Resultado Esperado: A palestra é incluída no sistema e suas informações são exibidas corretamente.
+
+2. Teste de vizualização de Palestra:
+Ação: Realize o login com um usuário válido.
+Verificação: Confirme se a palestra é adicionada com sucesso.
+Resultado Esperado: A palestra e suas informações são exibidas.
+
+3. Teste de Remoção de Palestra:
+Ação: Realize o login com um usuário admin válido.
+Ação: Acesse a área de agenda pelo botão de agenda de palestras.
+Ação: Selecione uma palestra para remover pelo X no card da palestra.
+Verificação: Confirme se a palestra é removida com sucesso.
+Resultado Esperado: A palestra selecionada não é mais exibida no sistema após a remoção.
+
 ## Usuário Admin:
 #### email: admin@admin
 #### senha: 123
