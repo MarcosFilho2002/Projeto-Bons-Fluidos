@@ -32,11 +32,11 @@
 7. Abra um navegador e acesse <http://localhost:3000>.
 8. Para interromper a excecução do projeto, no terminal, use o comando "ctrl+c".
 
-
-## Usuário Admin:
+## Usuários:
+### Admin:
 #### email: admin@admin
 #### senha: 123
-## Usuário Padrão:
+### Padrão:
 #### email: user@user
 #### senha: 123
 
