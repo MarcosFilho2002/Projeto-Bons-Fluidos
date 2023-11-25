@@ -40,3 +40,7 @@
 .logout{
     display: block;
 }
+
+.descricao{
+    display: none;
+}

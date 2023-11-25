@@ -275,6 +275,7 @@ div.container-registrar form .btn-fechar-registro:hover {
     padding: 1em;
     min-height: 8em;
     min-width: 8em;
+    max-width: 200px;
     font-weight: bold;
     border-radius: 0.5em;
     background-color: rgb(221, 18, 191);
@@ -310,11 +311,34 @@ div.container-registrar form .btn-fechar-registro:hover {
     transform: scale(1.1); /* Grow by 10% on hover */
 }
 
-  .agenda{
+.agenda{
     visibility: hidden;
-  }
+}
 
-  .logout {
+.descricao{
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 20px;
+    margin-top: 300px;
+    background-color: #ccc;
+    width: 600px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.descricao p{
+    font-size: 20px;
+    width: 600px;
+    margin-top: 4px;
+    margin-left: 7px;
+}
+
+.descricao p span{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.logout {
     background-color: #a80000;
     color: white;
     font-weight: 900;
