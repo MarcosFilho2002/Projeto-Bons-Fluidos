@@ -43,6 +43,19 @@
 # Passos para testar o sistema:
 ### Grupo 07
 ### O objetivo do sistema desenvolvido é gerenciar palestras, podendo-se vizualizar, agendar e desagendar.
+
+
+#### Roteiro de Teste: Cadastro em Site
+#### Objetivo: Verificar se o processo de cadastro está funcionando corretamente, permitindo que novos usuários se inscrevam.
+Pré-condições:
+O sistema está online e acessível.
+
+1. Teste de Cadastro Básico:
+Ação: Acesse a página de cadastro.
+Ação: Preencha os campos obrigatórios.
+Verificação: Confirme se o cadastro é concluído com sucesso.
+Resultado Esperado: O sistema registra o novo usuário e exibe uma mensagem de confirmação.
+
 #### Roteiro de Teste: Funcionalidade de Login
 #### Objetivo: Verificar se o sistema de login funciona corretamente, permitindo que os usuários acessem suas contas de forma segura.
 Pré-condições:
