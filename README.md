@@ -12,6 +12,10 @@
 ![Static Badge](https://img.shields.io/badge/MongoDB%20Compass-v1.40.4-darkgreen)  https://downloads.mongodb.com/compass/mongodb-compass-1.40.4-win32-x64.exe
 
 ## 📚 Bibliotecas utilizadas para desenvolvimento:
+
+<span style="align-center"> https://expressjs.com <br> https://github.com/handlebars-lang/handlebars.js <br> https://jwt.io</span>
+
+
 ![Static Badge](https://img.shields.io/badge/Express-v4.18.2-yellow)  https://expressjs.com
 <br>
 ![Static Badge](https://img.shields.io/badge/ExpressHandlebars-v6.0.6-darkred)  https://github.com/handlebars-lang/handlebars.js
