@@ -45,7 +45,7 @@
 ### O objetivo do sistema desenvolvido é gerenciar palestras, podendo-se vizualizar, agendar e desagendar.
 
 
-#### Roteiro de Teste: Cadastro em Site
+#### Roteiro de Teste: Funcionalidade de Cadastro
 #### Objetivo: Verificar se o processo de cadastro está funcionando corretamente, permitindo que novos usuários se inscrevam.
 Pré-condições:
 O sistema está online e acessível.
